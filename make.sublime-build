@@ -1,0 +1,13 @@
+{
+    "file_patterns": "*.c",
+    
+    "shell_cmd": ["cd", "$file_path"],
+    "shell_cmd": ["make"],
+
+    "variants": [
+        {
+            "name": "clean",
+            "cmd": ["make clean", "$file_path"]
+        }
+    ]
+}

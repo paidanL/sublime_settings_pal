@@ -1,0 +1,79 @@
+{
+	// Appearance
+	"color_scheme": "Packages/Enki Theme/scheme/Enki-Tokyo-Night.tmTheme",
+	"theme": "Enki-Theme.sublime-theme",
+	"enki_theme_panel_separator": true,
+	"enki_theme_compact_sidebar": true,
+	"enki_theme_small_statusbar": true,
+	"enki_theme_small_tab": true,
+    "enki_theme_tabs_autowidth": true,
+    "enki_theme_tree_headings": false,
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "bold_folder_labels": false,
+    "indent_guide_options": ["draw_normal", "draw_active"],
+    // "font_options": 
+    // [
+    // 	"subpixel_antialias", 
+    // 	"gray_antialias",		
+    // 	"ss01",
+	// 	"ss02",
+	// 	"ss03",
+	// 	"ss04",
+	// 	"ss05",
+	// ], // for retina Mac & Windows
+	"rulers":
+	[
+		80
+	],
+
+	// Fira Code Font Options
+	"font_size": 13,
+	"font_face": "Fira Code",
+	"font_options":
+	[
+		"subpixel_antialias",
+		"gray_antialias",
+		"ss01",
+		"ss02",
+		"ss03",
+		"ss04",
+		"ss05"
+	],
+
+
+	// Ignored Packages
+	"ignored_packages":
+	[
+		// "SublimeCodeIntel",
+		// "SystemVerilog",
+		"Vintage",
+	],
+
+	"scroll_past_end": true,
+
+	// Typing tabs:
+	"translate_tabs_to_spaces": true,
+	"shift_tab_unindent": true,
+	"indent_to_bracket": true,
+
+	// File tabs
+	"hide_tab_scrolling_buttons": true,
+	"hide_new_tab_button": true,
+	"save_on_focus_lost": true,
+
+	// Auto complete
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	// "spell_check": true,
+
+    "keys": ["cmd+shift+k"],
+    "command": "quarto render",
+    "args": {
+        "target": "browser",
+        "parser": "github",
+    },
+    "image_path_conversion": "absolute",
+    "file_path_conversions": "absolute",
+
+}

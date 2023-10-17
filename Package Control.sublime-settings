@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"Anaconda",
+		"BracketHighlighter",
+		"Browser Integration",
+		"C Improved",
+		"Clang Format",
+		"D3js v4",
+		"Emmet",
+		"Enki Theme",
+		"HTML5",
+		"LaTeXTools",
+		"MarkdownPreview",
+		"Material Theme",
+		"Origami",
+		"Package Control",
+		"Quarto",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-contrib-verilator",
+		"SystemVerilog",
+		"Terminus",
+		"Tomorrow Color Schemes",
+		"Verilog",
+		"Verilog Gadget",
+		"WordingStatus",
+	],
+}

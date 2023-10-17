@@ -1,0 +1,89 @@
+// SublimeLinter Settings - User
+{
+    "no_column_highlights_line": true,
+    "paths": {
+         "linux": [
+             "/usr/local/iverilog/bin",
+             "usr/local/verilator/bin"
+         ],
+         "osx": [],
+         "windows": [
+             "C:\\iverilog\\bin",
+         ],
+     },
+    "linters":
+    {
+        "iverilog": {
+             "disable": false,
+             "args": ["-i"], // add the "-i" flag
+             "excludes": [],
+         },
+         
+        "verilator": {
+            "lint_mode": "load_save",
+            "styles" : [
+                {
+                    "types": ["warning"],
+                    "mark_style": "squiggly_underline",
+                    "icon": "Packages/SublimeLinter/gutter-themes/Default/cog.png"
+                },
+                {
+                    "types": ["error"],
+                    "mark_style": "fill",
+                    "icon": "Packages/SublimeLinter/gutter-themes/Default/cog.png"
+                }
+            ],
+            "args": [
+                "--error-limit",
+                "500",
+                "--default-language",
+                "1800-2017", // systemverilog
+                // "1364-2005", // verilog
+                "--bbox-sys",
+                "--bbox-unsup",
+                "-Wall",
+                "-Wno-WIDTH",
+                "-Wno-IGNINC",
+                "-Wno-IGNDEF",
+                "-Wno-STMTDLY",
+                "-Wno-UNDRIVEN",
+                "-Wno-PINCONNECTEMPTY",
+                "-Wno-INPUTPINEMPTY",
+                "-Wno-OUTPUTPINEMPTY"
+            ],
+            "filter_errors": [
+                "Unsupported:",
+                "\\[IGNDEF\\]",
+                // "expects 8192 bits" // not to use -Wno-WIDTH
+            ],
+
+            // to lint based on single file (ignoring external module definition)
+            //   "use_multiple_source": false,
+            //   "search_project_path": false,
+
+            // to lint based on multiple files (searching external sources - the same directory or project path)
+            //   "use_multiple_source": true,
+            //   "search_project_path": true,
+            //  example) example.sublime-project
+            //       "sources": [ "D:\\project\\srcs", "D:\\project\\working" ]
+
+            "use_multiple_source": false,
+            "search_project_path": false,
+
+            // windows subsystem for linux (wsl verilator_bin)
+            "use_wsl": false,
+
+            // additional option to filter file type
+            "extension": [
+                ".v",
+                ".sv",
+                ".svh"
+            ],
+            // additional option for better highlighting near
+            "message_near_map": [
+                ["Case values", "case"],
+                ["Suggest casez", "casex"]
+            ]
+        }
+    }
+}
